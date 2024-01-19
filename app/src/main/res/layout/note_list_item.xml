@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="15dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/list_item_nume_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:text="Nume Client"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_item_masina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_item_nume_client"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:singleLine="true"
+            android:text=""
+            tools:text="masina" />
+
+        <TextView
+            android:id="@+id/list_item_constatare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_item_masina"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:singleLine="true"
+            android:text="constatre" />
+
+        <TextView
+            android:id="@+id/list_item_data_programare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_item_constatare"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:singleLine="true"
+            android:text="data" />
+
+        <TextView
+            android:id="@+id/list_item_pret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_item_data_programare"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:singleLine="true"
+            android:text="pret" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
